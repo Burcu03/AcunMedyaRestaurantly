@@ -6,9 +6,9 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında oluştur
 - 🌞 **Admin Paneli:** Sistem yönetiminin ve veri kontrolünün kolayca yönetilmesini sağlayan bölüm.
 - 🏠 **Ana Sayfa:** Kullanıcıların ulaştığı ilk bölüm.
 - 👩‍💻 **Hakkımızda:** Restoran hakkında tanıtıcı özet bilgileri içeren bölüm.
-- 📌 🎨 **Hizmetlerimiz:** Restoran hakkında tanıtıcı özet bilgileri içeren bölüm.
+- 🎨 **Hizmetlerimiz:** Restoran hakkında tanıtıcı özet bilgileri içeren bölüm.
 - 🍽  **Menü:** Restoranımızın sunduğu lezzetli yemeklerin listesi ve içerikleri içeren bölüm.
-- 🎯✨ **Spesyallerimiz:** Özel tarifler ve şeflerimizin önerdiği eşsiz lezzetleri içeren bölüm.
+- ✨ **Spesyallerimiz:** Özel tarifler ve şeflerimizin önerdiği eşsiz lezzetleri içeren bölüm.
 - 🎉 **Etkinlikler:** Restoranımızda gerçekleşen özel etkinlikler ve organizasyonlar hakkında bilgileri içeren bölüm.
 - 📚 **Referanslarımız:** Restoranımız hakkında aldığımız geri bildirim ve yorumları içeren bölüm.
 - 📸 **Galeri:** Restoranımızın iç - dış mekanından, yemeklerimizden ve etkinliklerimizden görselleri içeren bölüm.
@@ -28,30 +28,47 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında oluştur
 
 # 📸 Projeden Görseller
 - ## 🖼️ **Ana Sayfa**  
-  ![Ana Sayfa] ()
+  ![Ana Sayfa](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/AnaSayfa.png))
 
 - ## 🖼️ **Hakkımızda**  
-  ! [Hakkımızda]()
+  ! [Hakkımızda](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hakk%C4%B1m%C4%B1zda.png))
 
 - ## 🖼️ **Hizmetlerimiz**  
-  ! [Hizmetlerimiz]()
+  ! [Hizmetlerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hizmetlerimiz.png))
 
 - ## 🖼️ **Menü**  
-  ! [Menü]()
+  ! [Menü](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Men%C3%BC.png))
 
 - ## 🖼️ **Spesyallerimiz**  
-  ! [Spesyallerimiz]()
+  ! [Spesyallerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Spesyallerimiz.png))
 
 - ## 🖼️ **Etkinlikler**  
-  ! [Etkinlikler]()
+  ![Etkinlikler](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Etkinlikler.png))
+  
 - ## 🖼️ **Referanslarımız**  
-  ! [Referanslarımız]()
+  ![Referanslarımız](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Referanslar%C4%B1m%C4%B1z.png))
+  
 - ## 🖼️ **Galeri**  
-  ! [Galeri]()
+  ![Galeri](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Galeri.png))
 
 - ## 🖼️ **Şeflerimiz**  
-  ! [Şeflerimiz]()
+  ![Şeflerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/%C5%9Eeflerimiz.png))
 
 - ## 🖼️ **İletişim**  
-  ! [İletişim]()
+  ![İletişim](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/%C4%B0leti%C5%9Fim.png))
+
+- ## 🖼️ **Admin Giriş**  
+  ![Admin Giriş](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/AdminGiri%C5%9F.png))
+  
+- ## 🖼️ **Admin Paneli**  
+  ![Admin Paneli](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/adminAnasayfa.png))
+    
+- ## 🖼️ **Admin Kategori**  
+![Admin Kategori](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/AdminKategoriler.png))
+  
+- ## 🖼️ **Admin Ürünler**  
+![Admin Ürünler](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Admin%C3%9Cr%C3%BCnler.png))
+
+- ## 🖼️ **Admin İstatistik**  
+![Admin İstatistik](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Admin%C4%B0statistik.png))
 
