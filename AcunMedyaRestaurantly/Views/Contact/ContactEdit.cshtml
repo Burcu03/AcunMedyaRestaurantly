@@ -1,0 +1,57 @@
+﻿@model AcunMedyaRestaurantly.Entities.Contact
+@{
+    ViewBag.Title = "ContactEdit";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">İletişim Bilgisi Güncelleme</a></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">İletişim Bilgisi Güncelleme Formu</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <div class="form-group">
+                            @Html.HiddenFor(x => x.ContactId)
+
+                            <label>İsim</label>
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+                            <label>Mail</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+
+                            <label>Konu</label>
+                            @Html.TextBoxFor(x => x.Subject, new { @class = "form-control" })
+
+                            <label>Mesaj</label>
+                            @Html.TextBoxFor(x => x.Message, new { @class = "form-control" })
+
+                            <label>Gönderim Tarihi</label>
+                            @Html.TextBoxFor(x => x.SendDate, new { @class = "form-control" })
+
+                            <label>Okundu Bilgisi</label>
+                            @Html.TextBoxFor(x => x.IsRead, new { @class = "form-control" })
+
+                        </div>
+                        <button type="submit" class="btn btn-dark gradient-2">İletişim Bilgisini Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+

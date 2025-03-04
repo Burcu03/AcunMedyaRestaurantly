@@ -1,0 +1,89 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Reservation>
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <div class="active-member">
+                <div class="table-responsive">
+                    <table class="table table-xs mb-0">
+                        <thead>
+                            <tr>
+                                <th>Müşteri İsmi</th>
+                                <th>Mail</th>
+                                <th>Telefon</th>
+                                <th>Açıklaması</th>
+                                <th>Durumu</th>
+                                <th>Detaylar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.Name</td>
+                                    <td>@item.Email  </td>
+                                    <td>
+                                        <span>@item.Phone</span>
+                                    </td>
+                                    <td>@item.Description</td>
+                                    @if (item.ReservationStatus == "Beklemede")
+                                    {
+                                        <td><i class="fa fa-circle-o text-info  mr-2"></i> Beklemede</td>
+                                    }
+                                    @if (item.ReservationStatus == "Onaylandı")
+                                    {
+                                        <td><i class="fa fa-circle-o text-success  mr-2"></i> Onaylandı</td>
+                                    }
+                                    @if (item.ReservationStatus == "İptal Edildi")
+                                    {
+                                        <td><i class="fa fa-circle-o text-danger  mr-2"></i> İptal Edildi</td>
+                                    }
+                                    <td>
+                                        <button class="btn btn-outline-success" onclick="updateReservationStatus(@item.ReservationId, 'Onaylandı')">Onayla</button>
+                                        <button class="btn btn-outline-danger" onclick="updateReservationStatus(@item.ReservationId, 'İptal Edildi')">İptal Et</button>
+                                        <button class="btn btn-outline-warning" onclick="updateReservationStatus(@item.ReservationId, 'Beklemede')">Beklet</button>
+                                    </td>
+
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function updateReservationStatus(reservationId, status) {
+        $.ajax({
+            url: '@Url.Action("UpdateReservationStatus", "Reservation")', // Controller'daki action URL'si
+            type: 'POST',
+            data: {
+                id: reservationId,
+                status: status
+            },
+            success: function(response) {
+                // Eğer başarılı olursa, durumu güncelle
+                if (response.success) {
+                    // Durum kısmını güncelle
+                    var statusElement = $('#status-' + reservationId);
+                    var statusText = '';
+                    var statusClass = '';
+                    if (status === 'Onaylandı') {
+                        statusText = 'Onaylandı';
+                        statusClass = 'text-success';
+                    } else if (status === 'İptal Edildi') {
+                        statusText = 'İptal Edildi';
+                        statusClass = 'text-danger';
+                    } else if (status === 'Beklemede') {
+                        statusText = 'Beklemede';
+                        statusClass = 'text-info';
+                    }
+                    statusElement.html('<i class="fa fa-circle-o ' + statusClass + ' mr-2"></i> ' + statusText);
+                }
+            },
+            error: function() {
+                alert("Durum güncellenirken bir hata oluştu.");
+            }
+        });
+    }
+</script>

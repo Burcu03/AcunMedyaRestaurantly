@@ -1,0 +1,62 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Chef>
+@{
+    ViewBag.Title = "ChefList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Şef Listesi</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Şef Listesi</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Şef İsmi</th>
+                                    <th>Unvan</th>
+                                    <th>Resmi</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <th>@item.ChefId</th>
+                                        <td>@item.Name</td>
+                                        <td>@item.Title</td>
+                                        <td>@item.ImageUrl</td>
+
+                                        <td><a href="/Chef/ChefDelete/@item.ChefId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Chef/ChefEdit/@item.ChefId" class="btn btn-info gradient-2">Güncelle</a></td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                        <a href="/Chef/ChefCreate" class="btn btn-success">Yeni Şef Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+

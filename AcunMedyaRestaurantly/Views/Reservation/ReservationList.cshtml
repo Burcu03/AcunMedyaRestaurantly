@@ -1,0 +1,89 @@
+﻿@model List<AcunMedyaRestaurantly.Entities.Reservation>
+@{
+    ViewBag.Title = "ReservationList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    var count = 0;
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Reservasyon Bilgisi</a></li>
+        </ol>
+    </div>
+</div>
+<!-- row -->
+
+
+<div class="container-fluid">
+    <div class="row">
+
+        <!-- /# column -->
+        <div class="col-lg-12">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h4>Reservasyon Bilgisi</h4>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>İsim</th>
+                                    <th>Mail</th>
+                                    <th>Telefon</th>
+                                    <th>Açıklama</th>
+                                    <th>Tarih</th>
+                                    <th>Zaman</th>
+                                    <th>Konuk Sayısı</th>
+                                    <th>Durum Bilgisi</th>
+                                    <th>Sil</th>
+                                    <th>Güncelle</th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <td>@count</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.Phone</td>
+                                        <td>@item.Description</td>
+                                        <td>@item.ReservationDate</td>
+                                        <td>@item.Time</td>
+                                        <td>@item.GuestCount</td>
+                                        <td>@item.ReservationStatus</td>
+                                        <td>
+                                            <a href="/Reservation/ReservationDelete/@item.ReservationId" class="btn btn-danger">
+                                                <i class="fa fa-close" color-muted m-r-5></i>
+                                                Sil
+                                            </a>
+                                        </td>
+                                        <td>
+                                            <a href="/Reservation/ReservationEdit/@item.ReservationId" class="btn btn-info gradient-2">
+                                                <i class="fa fa-edit" color-muted m-r-5></i>
+                                                Güncelle
+                                            </a>
+                                        </td>
+                                    </tr>
+                                }
+
+                            </tbody>
+                        </table>
+                        <a href="/Reservation/ReservationCreate" class="btn btn-success">Yeni Reservasyon Bilgisi Ekle</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /# column -->
+    </div>
+</div>
+
+
+
+

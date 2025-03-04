@@ -1,0 +1,60 @@
+﻿@model AcunMedyaRestaurantly.Entities.Reservation
+@{
+    ViewBag.Title = "ReservationCreate";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<div class="row page-titles mx-0">
+    <div class="col p-md-0">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="javascript:void(0)">Anasayfa</a></li>
+            <li class="breadcrumb-item active"><a href="javascript:void(0)">Reservasyon Bilgisi Ekleme</a></li>
+        </ol>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Reservasyon Bilgisi Ekleme Formu</h4>
+                <div class="basic-form">
+                    <form method="post">
+                        <div class="form-group">
+                            <label>İsim</label>
+                            @Html.TextBoxFor(x => x.Name, new { @class = "form-control" })
+
+                            <label>Mail</label>
+                            @Html.TextBoxFor(x => x.Email, new { @class = "form-control" })
+
+                            <label>Telefon</label>
+                            @Html.TextBoxFor(x => x.Phone, new { @class = "form-control" })
+
+                            <label>Açıklama</label>
+                            @Html.TextBoxFor(x => x.Description, new { @class = "form-control" })
+
+                            <label>Tarih</label>
+                            @Html.TextBoxFor(x => x.ReservationDate, new { @class = "form-control" })
+
+                            <label>Zaman</label>
+                            @Html.TextBoxFor(x => x.Time, new { @class = "form-control" })
+
+                            <label>Konuk Sayısı</label>
+                            @Html.TextBoxFor(x => x.GuestCount, new { @class = "form-control" })
+
+                            <label>Durum Bilgisi</label>
+                            @Html.TextBoxFor(x => x.ReservationStatus, new { @class = "form-control" })
+
+                        </div>
+                        <button type="submit" class="btn btn-dark gradient-2">Reservasyon Bilgisi Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,116 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+@Html.Action("PartialHead", "Default")
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    @Html.Action("PartialTop", "Default")
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-cente">
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+
+            <h1 class="logo me-auto me-lg-0"><a href="/Default/Index">BK Restaurantly</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+            @Html.Action("PartialNavbar", "Default")<!-- .navbar -->
+
+            <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Rezervasyon Yap</a>
+
+        </div>
+    </header>
+    <!-- End Header -->
+    <!-- ======= Hero Section ======= -->
+    @Html.Action("PartialFeature", "Default")
+
+<main id="main">
+
+    <!-- ======= About Section ======= -->
+    @Html.Action("PartialAbout", "Default")
+
+    <!-- End About Section -->
+    <!-- ======= Why Us Section ======= -->
+    @Html.Action("PartialService", "Default")
+
+    <!-- End Why Us Section -->
+    <!-- ======= Menu Section ======= -->
+    @Html.Action("PartialMenu", "Default")
+    <!-- End Menu Section -->
+    <!-- ======= Specials Section ======= -->
+    @Html.Action("PartialSpecial", "Default")
+    <!-- End Specials Section -->
+    <!-- ======= Events Section ======= -->
+    @Html.Action("PartialEvent1", "Default")
+    <!-- End Events Section -->
+    <!-- ======= Book A Table Section ======= -->
+    @Html.Action("PartialBookaTable", "Default")
+    <!-- End Book A Table Section -->
+    <!-- ======= Testimonials Section ======= -->
+    @Html.Action("PartialTestimonial", "Default")
+    <!-- End Testimonials Section -->
+    <!-- ======= Gallery Section ======= -->
+    @Html.Action("PartialGalery", "Default")
+    <!-- End Gallery Section -->
+    <!-- ======= Chefs Section ======= -->
+    @Html.Action("PartialChef", "Default")
+    <!-- End Chefs Section -->
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+
+            <div class="section-title">
+                <h2>İletişim</h2>
+                <p>Bizimle İletişime Geçin</p>
+            </div>
+        </div>
+
+        <div data-aos="fade-up">
+            <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12014.25334563719!2d29.0384693!3d41.1658787!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x409fe0070d04a85f%3A0xa2442ba9c004f0b4!2zU2FyxLF5ZXIsIMSwc3RhbmJ1bA!5e0!3m2!1str!2str!4v1739275597951!5m2!1str!2str" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="container" data-aos="fade-up">
+
+            <div class="row mt-5">
+
+                @Html.Action("PartialAdress", "Default")
+
+                @if (ViewBag.Message != null)
+                {
+                    <script>alert('@ViewBag.Message')</script>
+                }
+                @Html.Action("PartialContact", "Default")
+
+            </div>
+
+        </div>
+    </section><!-- End Contact Section -->
+
+</main><!-- End #main -->
+    <!-- ======= Footer ======= -->
+    @Html.Action("PartialFooter", "Default")<!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="~/Template/Restaurantly/assets/vendor/aos/aos.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/php-email-form/validate.js"></script>
+    <script src="~/Template/Restaurantly/assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/Template/Restaurantly/assets/js/main.js"></script>
+
+</body>
+
+</html>
