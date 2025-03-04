@@ -31,16 +31,16 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında oluştur
   ![Ana Sayfa](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/AnaSayfa.png))
 
 - ## 🖼️ **Hakkımızda**  
-  ! [Hakkımızda](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hakk%C4%B1m%C4%B1zda.png))
+  ![Hakkımızda](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hakk%C4%B1m%C4%B1zda.png))
 
 - ## 🖼️ **Hizmetlerimiz**  
-  ! [Hizmetlerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hizmetlerimiz.png))
+  ![Hizmetlerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Hizmetlerimiz.png))
 
 - ## 🖼️ **Menü**  
-  ! [Menü](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Men%C3%BC.png))
+  ![Menü](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Men%C3%BC.png))
 
 - ## 🖼️ **Spesyallerimiz**  
-  ! [Spesyallerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Spesyallerimiz.png))
+  ![Spesyallerimiz](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Spesyallerimiz.png))
 
 - ## 🖼️ **Etkinlikler**  
   ![Etkinlikler](https://github.com/Burcu03/AcunMedyaRestaurantly/blob/master/AcunMedyaRestaurantly/Template/Etkinlikler.png))
